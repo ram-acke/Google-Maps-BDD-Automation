@@ -1,11 +1,15 @@
 package StepDefinition;
 
 import PageObject.openMap;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,6 +23,11 @@ public class stepDef {
     static WebDriver driver;
 
     static openMap openmap;
+//    @AfterStep
+//    public void addScreenshot(Scenario scenario){
+//        final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+//        scenario.attach(screenshot,"image/png", scenario.getName());
+//    }
 
     @Given("User Lunch Chrome browser")
     public void user_lunch_chrome_browser() {

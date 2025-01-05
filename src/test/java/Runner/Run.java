@@ -11,7 +11,10 @@ import org.junit.runner.RunWith;
         dryRun = false,
 //        dryRun = true,
         monochrome = true,
-        plugin = {"pretty","html:target/cucumber-reports/reports_html.html"}
+        plugin = {"pretty","html:output/reports_html.html"}
+
+//        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+
 )
 public class Run {
 }

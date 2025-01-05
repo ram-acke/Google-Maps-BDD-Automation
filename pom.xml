@@ -7,6 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
+
+
   <name>googleMap</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -89,6 +91,25 @@
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>4.25.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-api</artifactId>
+      <version>4.25.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.9</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/tech.grasshopper/extent-excel-report -->
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extent-excel-report</artifactId>
+      <version>1.4.0</version>
     </dependency>
 
   </dependencies>

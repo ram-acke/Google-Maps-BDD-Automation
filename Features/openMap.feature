@@ -20,6 +20,8 @@ Background: Common steps for all scenarios
     And clicks on driving icon
     Then the map should display the route between the two locations
     And the estimated travel time and distance should be shown
+    And Close browser
+
 
 
 
